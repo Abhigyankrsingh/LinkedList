@@ -38,19 +38,19 @@ struct Node{
 
 int recsearch(Node* head, int x){
 
-    if(head == NULL) return -1;
+   if(head == NULL) return -1;
 
-    if(head->data == x){
-        return 1;
-    } else {
-          int res = recsearch(head->next,  x);
+   if(head->data == x) return 1;
 
-          if(res  == -1) return -1;
+   else {
+    int res = recsearch(head->next,x);
 
-          else {
-            return (res +1);
-          }
-    }
+
+    if(res== -1) return -1;
+
+    else return (res+1);
+   }
+
 
 }
 
