@@ -2,39 +2,32 @@
 
 using namespace std;
 
-struct Node
-{
-    /* data */
+
+
+struct Node {
 
     int data;
 
     Node* next;
 
     Node(int x){
-
-        data = x;
-        next = NULL;
-
+       data = x;
+       next = NULL;
+        
     }
 };
 
 
 
-
-
 int main(){
-   Node*head = new Node(10);
 
-   Node*temp1 = new Node(12);
+Node* head = new Node(4);
 
-   Node*temp2 = new Node(4);
-    
+Node*temp1 = new Node(2);
 
-    head ->next = temp1;
+Node*temp2 = new Node(1);
 
-    temp1->next = temp2;
-
-    cout<<head ->data<< "-> " << temp1->data<< "->"<< temp2->data;
+cout << head->data << " " << temp1 -> data<<" "<< temp2->data;
 
 
 }
